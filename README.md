@@ -2,6 +2,7 @@
 
 
 
-
-[![C/C++ CI - Build Status](https://github.com/RavaliSri/c_miniproject_lnt/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/RavaliSri/c_miniproject_lnt/actions/workflows/c-cpp.yml)
+Build | Cpp check
+------ | --------
+![C/C++ CI - Build Status](https://github.com/RavaliSri/c_miniproject_lnt/actions/workflows/c-cpp.yml/badge.svg)
 
