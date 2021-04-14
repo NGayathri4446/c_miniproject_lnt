@@ -1,25 +1,35 @@
-PROJ_NAME = college_management
-TEST_PROJ_NAME = Test_$(PROJ_NAME)
+PROJ_NAME = student
 
-SRC =src/committee.c \
-src/info.c\
-src/subject.c \
-src/professor.c \
-src/room.c \
 
-COV_SRC = test.c
+SRC = main.c\
+src\addStudentInData
+src\deleteStudent.c\
+src\headMessage.c\
+src\init.c\
+src\isFileExists.c\
+src\IsLeapYear.c\
+src\isNameValid.c\
+src\isValidDate.c\
+src\login.c\
+src\menu.c\
+src\printMessageCent
+src\searchStudent.c\
+src\updateCredential
+src\viewStudent.c\
+src\welcomeMessage.c
 
-TEST_SRC = test/test.c \
-unity/unity.c 
+
+
+
 INC_H = inc
-INC_T = unity
+
 
 ifdef OS
    RM = del 
    FixPath = $(subst /,\,$1)
    EXEC = exe
 else
-   ifeq ($(shell uname), Linux)
+   ifeq ($(shell uname), Windows)
       RM = rm -rf
       FixPath = $1
 	  EXEC = out
@@ -32,36 +42,3 @@ all:
 	
 run:
 	$(call FixPath,$(PROJ_NAME).$(EXEC))
-test:
-	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
-	./$(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
-
-coverage:
-	cp test/test.c .
-	gcc -fprofile-arcs -ftest-coverage -I $(INC_H) -I $(INC_T) unity/unity.c test.c $(SRC) -o $(call FixPath, $(TEST_PROJ_NAME).$(EXEC))
-	$(call FixPath, ./$(TEST_PROJ_NAME).$(EXEC))
-	gcov -a $(COV_SRC)
-	$(RM) *.$(EXEC)
-	$(RM) *.gcda
-	$(RM) *.gcno
-	$(RM) *.c.gcov
-	$(RM) *.DAT
-	$(RM) test.c
-
-
-cppcheck:
-	cppcheck --enable=all $(SRC) main.c
-debug:
-	gcc -I $(INC_H) $(SRC) main.c -g -o $(PROJ_NAME).$(EXEC)
-	gdb $(PROJ_NAME).$(EXEC)
-
-valgrind:
-	valgrind ./$(TEST_PROJ_NAME).$(EXEC)
-
-
-clean:
-	$(RM) *.DAT
-	$(RM) *.$(EXEC)
-	$(RM) *.gcda
-	$(RM) *.gcno
-	$(RM) *.c.gcov
