@@ -1,6 +1,5 @@
-PROJECT_NAME = all.exe
-SRC = main.c\
-src\addStudentInDatabase.c\
+PROJECT_NAME = student
+SRC = src\addStudentInDatabase.c\
 src\deleteStudent.c\
 src\headMessage.c\
 src\init.c\
@@ -16,13 +15,25 @@ src\updateCredential.c\
 src\viewStudent.c\
 src\welcomeMessage.c
 
-INC = inc
 
-$(PROJECT_NAME) : $(SRC)
-	gcc -I $(INC) $(SRC) -o all.exe
+INC_H = inc
 
-run: $(PROJECT_NAME)
-		$(PROJECT_NAME)
 
-clean:
-	del /q *.exe
+ifdef OS
+   RM = del 
+   FixPath = $(subst /,\,$1)
+   EXEC = exe
+else
+   ifeq ($(shell uname), Windows)
+      RM = rm -rf
+      FixPath = $1
+	  EXEC = out
+   endif
+endif
+.PHONY: run clean test doc all
+
+all:
+	gcc -I $(INC_H) $(SRC) main.c -o $(call FixPath,$(PROJ_NAME).$(EXEC))
+	
+run:
+	$(call FixPath,$(PROJ_NAME).$(EXEC))
