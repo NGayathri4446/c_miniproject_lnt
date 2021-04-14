@@ -1,19 +1,20 @@
-PROJ_NAME=student
-SRC=\addStudentInDatabase.c\
-	deleteStudent.c\
-	headMessage.c\
-	init.c\
-	isFileExists.c\
-	IsLeapYear.c\
-	isNameValid.c\
-	isValidDate.c\
-	login.c\
-	menu.c\
-	printMessageCenter.c\
-	searchStudent.c\
-	updateCredential.c\
-	viewStudent.c\
-	welcomeMessage.c
+PROJ_NAME = student
+SRC = src\addStudentInDataBase.c\
+src\deleteStudent.c\
+src\headMessage.c\
+src\init.c\
+src\isFileExists.c\
+src\IsLeapYear.c\
+src\isNameValid.c\
+src\isValidDate.c\
+src\login.c\
+src\menu.c\
+src\printMessageCenter.c\
+src\searchStudent.c\
+src\updateCredential.c\
+src\viewStudent.c\
+src\welcomeMessage.c
+
 INC_H = inc
 ifdef OS
 	RM = del
