@@ -18,11 +18,11 @@ src\welcomeMessage.c
 
 INC = inc
 
-all:
-	gcc -I $(INC) $(SRC) main.c -o $(call FixPath,$(PROJ_NAME).$(EXEC))
-	
-run:
-	$(call FixPath,$(PROJ_NAME).$(EXEC)
+$(PROJECT_NAME) : $(SRC)
+	gcc -I $(INC) $(SRC) -o all.exe
+
+run: $(PROJECT_NAME)
+		$(PROJECT_NAME)
 
 clean:
 	del /q *.exe
