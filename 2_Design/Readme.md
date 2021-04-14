@@ -9,7 +9,7 @@
    
    
    
-   Architectural Design:
+   <h2>Architectural Design:
    
    ![Screenshot (8)](https://user-images.githubusercontent.com/59175027/114693785-9300d700-9d37-11eb-96ca-d0857931ea16.png)
 
