@@ -31,11 +31,11 @@
 
 <h4>Since we have assumed that few systems already exists we can say that in future sprints new features could be added.
 	
-	
-![Konsus SWOT Design 03-16 9](https://user-images.githubusercontent.com/59175027/114295579-ca674d80-9ac3-11eb-94f1-e7a4942900e8.png)	
-	
-
 <h2>SWOT ANALYSIS
+	
+	
+![Konsus SWOT Design 03-16 9](https://user-images.githubusercontent.com/59175027/114694465-2df9b100-9d38-11eb-9c17-0692466a5ef2.jpg)
+
 
 <h2>4W's and 1'H
 <h3>Who:
