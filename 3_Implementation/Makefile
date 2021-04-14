@@ -18,8 +18,8 @@ src\welcomeMessage.c
 
 INC = inc
 
-$(PROJECT_NAME) : $(SRC)
-	gcc -I $(INC) $(SRC) -o all.exe
+all:	$(PROJECT_NAME) : $(SRC)
+				gcc -I $(INC) $(SRC) -o all.exe
 
 run: $(PROJECT_NAME)
 		$(PROJECT_NAME)
