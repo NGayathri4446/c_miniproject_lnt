@@ -4,7 +4,7 @@
 
 Build | Code Quality
 ------ | --------
-![C/C++ CI - Build Status](https://github.com/RavaliSri/c_miniproject_lnt/actions/workflows/c-cpp.yml/badge.svg) | ![cppcheck-action](https://github.com/RavaliSri/c_miniproject_lnt/actions/workflows/cppcheck.yml/badge.svg)
+![C/C++ CI - Build Status](https://github.com/RavaliSri/c_miniproject_lnt/actions/workflows/c-cpp.yml/badge.svg) | ![cppcheck-action](https://github.com/RavaliSri/c_miniproject_lnt/actions/workflows/cppcheck.yml/badge.svg) | 
 
 
 
