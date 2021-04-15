@@ -36,3 +36,12 @@ all:
 run:
 
 		$(call FixPath,$(PROJ_NAME).$(EXEC))
+
+cppcheck:
+
+		cppcheck --enable=all $(SRC) main.c
+
+debug:
+
+		gcc -I $(INC_H) $(SRC) main.c -g -o $(PROJ_NAME).$(EXEC)
+		gdb $(PROJ_NAME).$(EXEC
