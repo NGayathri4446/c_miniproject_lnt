@@ -27,6 +27,9 @@ else
 			EXEC = out
 	endif
 endif
+
+DOCUMENTATION_OUTPUT = Documentation/html
+
 .PHONY: run clean test doc all
 
 all:
@@ -45,3 +48,6 @@ debug:
 
 		gcc -I $(INC_H) $(SRC) main.c -g -o $(PROJ_NAME).$(EXEC)
 		gdb $(PROJ_NAME).$(EXEC
+
+doc:
+		make -C ./Documentation
