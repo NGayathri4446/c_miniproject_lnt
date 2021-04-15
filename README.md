@@ -10,6 +10,9 @@ Build | Code Quality
 
 <h2>Folder Structure
 
+   
+   
+   
    Folder | Behavior
    ------ | --------
    1_Requirements | Documents detailing requirements and research
