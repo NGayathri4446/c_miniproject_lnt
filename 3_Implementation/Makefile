@@ -52,7 +52,7 @@ run:
 		
 test:
 
-        gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
+		gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
 		./$(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
 
 cppcheck:
