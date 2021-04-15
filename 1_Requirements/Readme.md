@@ -16,6 +16,15 @@
 
 
    <h5>4. Fee Management:It helps you manage all the fee-related tasks such as accepting fees, keeping fee records, maintaining receipts, taking care of dues and refunds, and more. It also allows you to create the fees cycle of the school 
+	
+	
+<h4>State of Art
+	
+S.No |	Ageing-Time & Cost |Time
+------|-------------------|-----
+1 |	Ageing-Time |	10days
+2 |	Ageing-Cost |	There should be a persnol computer with required software tools and internet.	
+	
 
 		
 <h2>Defining Our System
