@@ -1,4 +1,6 @@
 PROJ_NAME = student
+TEST_PROJ_NAME = Test_$(PROJ_NAME)
+
 SRC = src\addStudentInDataBase.c\
 src\deleteStudent.c\
 src\headMessage.c\
@@ -15,7 +17,15 @@ src\updateCredential.c\
 src\viewStudent.c\
 src\welcomeMessage.c
 
+
+COV_SRC = test.c
+TEST_SRC = test/test.c \
+unity/unity.c
+
+
 INC_H = inc
+INC_T = unity
+
 ifdef OS
 	RM = del
 	FixPath = $(subst /,\,$1)
