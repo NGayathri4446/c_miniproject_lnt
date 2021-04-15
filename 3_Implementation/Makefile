@@ -18,7 +18,7 @@ src\viewStudent.c\
 src\welcomeMessage.c
 
 
-COV_SRC = test.c
+
 TEST_SRC = test/test.c \
 unity/unity.c
 
@@ -49,6 +49,11 @@ all:
 run:
 
 		$(call FixPath,$(PROJ_NAME).$(EXEC))
+		
+test:
+
+                gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
+		./$(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
 
 cppcheck:
 
