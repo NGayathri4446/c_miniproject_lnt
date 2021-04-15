@@ -51,9 +51,9 @@
 		
 
 
-Detail Requirements
+<h1>Detail Requirements
 
-   High Level Requirements
+   <h5>High Level Requirements
 
 ID  |	Description  |	Category   |	Status
 ---- |-------------- |------------- |----------
