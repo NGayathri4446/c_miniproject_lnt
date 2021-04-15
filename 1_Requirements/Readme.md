@@ -48,6 +48,23 @@
 	<h5>This problem is expected to surface in all states of India.
 <h3>How:
 	<h5>This problem may cause ineffective record management and hence there can be a huge amount of time wastage. 
+		
+
+
+<h1>Detail Requirements
+
+   <h2>High Level Requirements
+
+ID  |	Description  |	Category   |	Status
+---- |-------------- |------------- |----------
+HR01 |	User shall be able to add new student record |	Techincal  |	IMPLEMENTED
+HR02 |	User shall be able to search a student record |	Techincal  |	IMPLEMENTED
+HR03 |	User shall be able to view a student record   |	Techincal   |	IMPLEMENTED
+HR04 |	User shall be able to delete a student record |	Techincal   |	IMPLEMENTED
+HR05 |	User shall be able to save records in a file  |	Techincal   |	IMPLEMENTED
+HR06 |	User shall be able to read data from a file |	Techincal   |	IMPLEMENTED
+HR07 |	Data should not be lost in case of faliure  |	Scenario    |	FUTURE
+HR08 |	Data should always be stored when closing the system |	Scenario |	IMPLEMENTED
 
 
 
