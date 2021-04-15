@@ -2,6 +2,9 @@
 #include "prototypes.h"
 
 
+#define PROJ_NAME="student"
+
+
 
 /* Prototypes for all the test functions */
 void test_name(void);
