@@ -8,7 +8,7 @@
 
 /* Prototypes for all the test functions */
 void test_name(void);
-void test_date(void);
+void test_file(void);
 
 
 /* Required by the unity test framework */
@@ -24,7 +24,7 @@ int main()
 
 /* Run Test functions */
   RUN_TEST(test_name);
-  RUN_TEST(test_date);
+  RUN_TEST(test_file);
  
 
   /* Close the Unity Test Framework */
@@ -39,13 +39,13 @@ void test_name(void) {
   TEST_ASSERT_EQUAL(0, isNameValid("raj4"));
 }
 
-void test_date(void) {
+void test_file(void) {
 
-  TEST_ASSERT_EQUAL(0, isValidDate(11/13/2021));
+  TEST_ASSERT_EQUAL(1, isFileExists("rb"));
 
 
   /* Dummy fail*/
-  TEST_ASSERT_EQUAL(1, isValidDate(12/10/2021));
+  TEST_ASSERT_EQUAL(0, isFileExists("wb"));
 }
 
 
