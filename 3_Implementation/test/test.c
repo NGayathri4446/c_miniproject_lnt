@@ -45,7 +45,7 @@ void test_file(void) {
 
 
   /* Dummy fail*/
-  TEST_ASSERT_EQUAL(0, isFileExists("wb"));
+  TEST_ASSERT_EQUAL(0, isFileExists("r"));
 }
 
 
