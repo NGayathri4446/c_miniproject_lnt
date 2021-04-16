@@ -2,14 +2,24 @@
 
 int isValidDate(Date *validDate)
 {
+    int validate=1;
     //check range of year,month and day
     if (validDate->yyyy > MAX_YR ||
             validDate->yyyy < MIN_YR)
-        return 0;
+            {
+                validate=0;
+            }
+        return validate;
     if (validDate->mm < 1 || validDate->mm > 12)
-        return 0;
+    {
+        validate=0;
+    }
+        return validate ;
     if (validDate->dd < 1 || validDate->dd > 31)
-        return 0;
+    {
+        validate=0;
+    }
+        return validate;
     //Handle feb days in leap year
     if (validDate->mm == 2)
     {
@@ -22,5 +32,5 @@ int isValidDate(Date *validDate)
     if (validDate->mm == 4 || validDate->mm == 6 ||
             validDate->mm == 9 || validDate->mm == 11)
         return (validDate->dd <= 30);
-    return 1;
+    return validate;
 }
