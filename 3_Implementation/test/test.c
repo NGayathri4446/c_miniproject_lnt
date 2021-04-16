@@ -9,6 +9,7 @@
 /* Prototypes for all the test functions */
 void test_name(void);
 void test_year(void);
+void test_date(void);
 
 
 /* Required by the unity test framework */
@@ -25,6 +26,8 @@ int main()
 /* Run Test functions */
   RUN_TEST(test_name);
   RUN_TEST(test_year);
+  RUN_TEST(test_date);
+
  
 
   /* Close the Unity Test Framework */
@@ -46,6 +49,15 @@ void test_year(void) {
 
   /* Dummy fail*/
   TEST_ASSERT_EQUAL(0, IsLeapYear(1999));
+}
+
+void test_date(void) {
+
+  TEST_ASSERT_EQUAL(0, isValidDate(11/13/2021));
+
+
+  /* Dummy fail*/
+  TEST_ASSERT_EQUAL(1, isValidDate(10/12/2021));
 }
 
 
