@@ -55,7 +55,7 @@ void test_year(void) {
 
 void test_file(void) {
 
-  TEST_ASSERT_EQUAL(1, isFileExists("rb");
+  TEST_ASSERT_EQUAL(1, isFileExists("rb"));
 
 }
 
