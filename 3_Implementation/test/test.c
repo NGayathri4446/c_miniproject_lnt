@@ -9,7 +9,7 @@
 /* Prototypes for all the test functions */
 void test_name(void);
 void test_year(void);
-void test_file(void);
+
 
 
 /* Required by the unity test framework */
@@ -27,7 +27,7 @@ int main()
 /* Run Test functions */
   RUN_TEST(test_name);
   RUN_TEST(test_year);
-  RUN_TEST(test_file);
+  
   
 
  
@@ -53,11 +53,9 @@ void test_year(void) {
   TEST_ASSERT_EQUAL(0, IsLeapYear(1999));
 }
 
-void test_file(void) {
 
-  TEST_ASSERT_EQUAL(1, isFileExists("rb"));
 
-}
+
 
 
 
