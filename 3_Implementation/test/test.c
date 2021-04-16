@@ -53,7 +53,7 @@ void test_year(void) {
   TEST_ASSERT_EQUAL(0, IsLeapYear(1999));
 }
 
-void test_year(void) {
+void test_file(void) {
 
   TEST_ASSERT_EQUAL(1, isFileExists("rb");
 
