@@ -1,7 +1,7 @@
 #include "unity.h"
 #include "prototypes.h"
 
-
+#include <prototypes.h>
 #define PROJ_NAME = "student"
 
 
@@ -40,10 +40,10 @@ void test_name(void) {
 }
 
 void test_date(void) {
-  TEST_ASSERT_EQUAL(0, isValidDate(04/05/2021));
+  TEST_ASSERT_EQUAL(0, isValidDate(4/5/2021));
 
   /* Dummy fail*/
-  TEST_ASSERT_EQUAL(1, isValidDate(04/04/2021));
+  TEST_ASSERT_EQUAL(1, isValidDate(4/4/2021));
 }
 
 
