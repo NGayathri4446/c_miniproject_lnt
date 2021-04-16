@@ -17,7 +17,6 @@ void setUp(){}
 /* Required by the unity test framework */
 void tearDown(){}
 
-FILE *fp=NULL;
 
 /* Start of the application test */
 int main()
@@ -56,11 +55,8 @@ void test_year(void) {
 
 void test_year(void) {
 
-  TEST_ASSERT_EQUAL(1, isFileExists(!(&fp)));
+  TEST_ASSERT_EQUAL(1, isFileExists("rb");
 
-
-  /* Dummy fail*/
-  TEST_ASSERT_EQUAL(0, isFileExists(&fp));
 }
 
 
