@@ -15,7 +15,7 @@ src/printMessageCenter.c\
 src/searchStudent.c\
 src/updateCredential.c\
 src/viewStudent.c\
-src/welcomeMessage.c \
+src/welcomeMessage.c 
 
 
 
