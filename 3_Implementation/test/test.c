@@ -41,11 +41,11 @@ void test_name(void) {
 
 void test_date(void) {
 
-  TEST_ASSERT_EQUAL(0, isValidDate(11/12/2021));
+  TEST_ASSERT_EQUAL(0, isValidDate(11/13/2021));
 
 
   /* Dummy fail*/
-  TEST_ASSERT_EQUAL(1, isValidDate(12/11/2021));
+  TEST_ASSERT_EQUAL(1, isValidDate(12/10/2021));
 }
 
 
