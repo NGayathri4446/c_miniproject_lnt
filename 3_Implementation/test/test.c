@@ -41,11 +41,11 @@ void test_name(void) {
 
 void test_year(void) {
 
-  TEST_ASSERT_EQUAL(1, IsLeapYear("2000"));
+  TEST_ASSERT_EQUAL(1, IsLeapYear(2000));
 
 
   /* Dummy fail*/
-  TEST_ASSERT_EQUAL(0, IsLeapYear("1999"));
+  TEST_ASSERT_EQUAL(0, IsLeapYear(1999));
 }
 
 
