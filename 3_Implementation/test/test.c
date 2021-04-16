@@ -53,7 +53,7 @@ void test_year(void) {
 
 void test_date(void) {
 
-  TEST_ASSERT_EQUAL(0, isValidDate(11/13/2021));
+  TEST_ASSERT_EQUAL(0, isValidDate(33/13/1890));
 
 
   /* Dummy fail*/
