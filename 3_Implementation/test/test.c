@@ -9,13 +9,15 @@
 /* Prototypes for all the test functions */
 void test_name(void);
 void test_year(void);
-void test_date(void);
+void test_file(void);
 
 
 /* Required by the unity test framework */
 void setUp(){}
 /* Required by the unity test framework */
 void tearDown(){}
+
+FILE *fp=NULL;
 
 /* Start of the application test */
 int main()
@@ -26,7 +28,8 @@ int main()
 /* Run Test functions */
   RUN_TEST(test_name);
   RUN_TEST(test_year);
-  RUN_TEST(test_date);
+  RUN_TEST(test_file);
+  
 
  
 
@@ -51,13 +54,18 @@ void test_year(void) {
   TEST_ASSERT_EQUAL(0, IsLeapYear(1999));
 }
 
-void test_date(void) {
+void test_year(void) {
 
-  TEST_ASSERT_EQUAL(0, isValidDate(33/13/1890));
+  TEST_ASSERT_EQUAL(1, isFileExists(!(&fp)));
 
 
   /* Dummy fail*/
-  TEST_ASSERT_EQUAL(1, isValidDate(10/12/2021));
+  TEST_ASSERT_EQUAL(0, isFileExists(&fp));
 }
+
+
+
+
+
 
 
