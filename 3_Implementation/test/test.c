@@ -8,7 +8,7 @@
 
 /* Prototypes for all the test functions */
 void test_name(void);
-void test_file(void);
+void test_year(void);
 
 
 /* Required by the unity test framework */
@@ -24,7 +24,7 @@ int main()
 
 /* Run Test functions */
   RUN_TEST(test_name);
-  RUN_TEST(test_file);
+  RUN_TEST(test_year);
  
 
   /* Close the Unity Test Framework */
@@ -39,13 +39,13 @@ void test_name(void) {
   TEST_ASSERT_EQUAL(0, isNameValid("raj4"));
 }
 
-void test_file(void) {
+void test_year(void) {
 
-  TEST_ASSERT_EQUAL(0, isFileExists("wb"));
+  TEST_ASSERT_EQUAL(1, IsLeapYear("2000"));
 
 
   /* Dummy fail*/
-  TEST_ASSERT_EQUAL(1, isFileExists("rb"));
+  TEST_ASSERT_EQUAL(0, IsLeapYear("1999"));
 }
 
 
