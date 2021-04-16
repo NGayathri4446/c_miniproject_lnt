@@ -1,21 +1,21 @@
 PROJ_NAME = student
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
-SRC = src\addStudentInDataBase.c\
-src\deleteStudent.c\
-src\headMessage.c\
-src\init.c\
-src\isFileExists.c\
-src\IsLeapYear.c\
-src\isNameValid.c\
-src\isValidDate.c\
-src\login.c\
-src\menu.c\
-src\printMessageCenter.c\
-src\searchStudent.c\
-src\updateCredential.c\
-src\viewStudent.c\
-src\welcomeMessage.c
+SRC = src/addStudentInDataBase.c\
+src/deleteStudent.c\
+src/headMessage.c\
+src/init.c\
+src/isFileExists.c\
+src/IsLeapYear.c\
+src/isNameValid.c\
+src/isValidDate.c\
+src/login.c\
+src/menu.c\
+src/printMessageCenter.c\
+src/searchStudent.c\
+src/updateCredential.c\
+src/viewStudent.c\
+src/welcomeMessage.c \
 
 
 
