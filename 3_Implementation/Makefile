@@ -66,6 +66,6 @@ debug:
 
 clean:
 
-		del /q *.EXEC
+		del /q *.exe
 
 
